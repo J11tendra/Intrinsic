@@ -29,8 +29,8 @@ The Tablet "Footer" was challenging for me to code. Despite the last flex being 
 
 **Screenshots**
 
-![Homepage Desktop Intrinsic](/Images/home1.png)
-![Shoppage Desktop Intrinsic](/Images/about2.png)
+![Homepage Desktop Intrinsic](Images/home1.png)
+![Shoppage Desktop Intrinsic](Images/about2.png)
 
 **Website Preview Link**
 
