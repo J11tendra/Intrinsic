@@ -1,0 +1,237 @@
+.contact__header {
+
+    h1 {
+        font-size: $font-8;
+        font-weight: $med;
+        color: $white;
+        text-align: center;
+        margin-top: 4.625rem;
+
+        @include breakpoint-up(medium) {
+            font-size: $font-10;
+            font-weight: $sembold;
+        }
+    }
+}
+
+.contact-main {
+    padding: 3.875rem 1.25rem 6.25rem 1.25rem;
+
+    @include breakpoint-up(large) {
+        padding: 8rem;
+    }
+
+    @include breakpoint-up(x-large) {
+        padding: 8rem 12rem;
+    }
+}
+
+
+.contact-flex {
+
+    @include breakpoint-up(large) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 10rem;
+        margin-top: 8rem;
+    }
+
+    @include breakpoint-up(x-large) {
+        column-gap: 18rem;
+    }
+}
+
+
+.contact-heading {
+    margin-bottom: 4.5rem;
+
+    h2 {
+        font-size: $font-6;
+        font-weight: $med;
+        text-align: center;
+        margin-bottom: 0.875rem;
+
+        @include breakpoint-up(medium) {
+            font-size: $font-8;
+            font-weight: $med;
+        }
+    }
+
+    h6 {
+        font-size: $font-3;
+        font-weight: $reg;
+        color: $light-gray;
+        max-width: 24.375rem;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+        @include breakpoint-up(medium) {
+           font-size: $font-5;
+           max-width: 34.275rem;
+        }
+    }
+}
+
+
+.contact-details {
+    max-width: 16.25rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 6.5rem;
+
+    @include breakpoint-up(large) {
+        flex: 1;
+    }
+
+    h4 {
+        font-size: $font-5;
+        font-weight: $reg;
+
+
+        @include breakpoint-up(medium) {
+            font-size: $font-7;
+            font-weight: $med;
+        }
+
+        img {
+            margin-right: 1.5rem;
+        }
+    }
+
+    span {
+        display: block;
+        margin-left: 2.5rem;
+        font-size: $font-3;
+        color: $light-gray;
+        font-weight: $reg;
+        margin-bottom: 2.875rem;
+
+        @include breakpoint-up(medium) {
+            font-size: $font-4;
+            margin-top: 0.5rem;
+        }
+    }
+
+
+    .address-dts {
+        img {
+            width: 1.125rem;
+            height: 1.25rem;
+
+            @include breakpoint-up(medium) {
+                height: 1.5625rem;
+                width: 1.375rem;
+            }
+        }
+    }
+
+    .mail-dts {
+        img {
+            height: 1rem;
+            width: 1.25rem;
+
+            @include breakpoint-up(medium) {
+                height: 1.83125rem;
+                width: 1.375rem;
+            }
+        }
+    }
+
+    .phone-dts {
+        img {
+            height: 1.875rem;
+            width: 1.875rem;
+
+            @include breakpoint-up(medium) {
+                height: 1.5625rem;
+                width: 1.375rem;
+            }
+        }
+
+        span {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+.contact-form {
+
+    @include breakpoint-up(large) {
+        flex: 2;
+        max-width: 32.92219rem;
+    }
+
+    form {
+        max-width: 22.20281rem;
+        width: 100%;
+        margin: 0 auto;
+
+        @include breakpoint-up(medium) {
+            max-width: 30.125rem;
+        }
+
+        @include breakpoint-up(large) {
+            max-width: 32.92219rem;
+            margin: 0;
+        }
+
+        a {
+            color: $black;
+            text-align: center;
+            margin: 0 auto;
+
+            @include breakpoint-up(large) {
+                margin: 0;
+            }
+        }
+    }
+
+}
+
+
+.contact-map {
+    padding: 6.5rem 3.125rem;
+    background-color: $mid-light-gray;
+
+    @include breakpoint-up(large) {
+        padding: 6.5rem;
+    }
+
+    .map-img {
+        height: 25rem;
+        max-width: 20.625rem;
+        width: 100%;
+        margin: 0 auto;
+
+        @include breakpoint-up(medium) {
+            max-width: 37rem;
+            height: 38rem;
+        }
+
+        @include breakpoint-up(large) {
+            max-width: 58.50906rem;
+            height: 31.25rem;
+        }
+
+        img {
+            height: 25rem;
+            max-width: 20.625rem;
+            width: 100%;
+            object-fit: cover;
+
+            @include breakpoint-up(medium) {
+                max-width: 37rem;
+                height: 38rem;
+            }
+
+            @include breakpoint-up(large) {
+                max-width: 58.50906rem;
+                height: 31.25rem;
+            }
+        }
+    }
+}

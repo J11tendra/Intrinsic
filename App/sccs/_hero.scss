@@ -1,0 +1,67 @@
+.text {
+    text-align: center;
+    padding: 5rem 0;
+
+    @include breakpoint-up(medium) {
+        padding: 7rem 0;
+    }
+
+    @include breakpoint-up(large) {
+        padding: 3.875rem 0;
+    }
+
+
+    h1 {
+        color: $white;
+        max-width: 22.5rem;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 3.2rem;
+
+        span {
+            color: $brownish-pink;
+        }
+
+        @include breakpoint-up(medium) {
+            max-width: 30.5rem;
+            margin-bottom: 3.5rem;
+        }
+
+        @include breakpoint-up(large) {
+            max-width: 54.25rem;
+            font-size: $font-10;
+            font-weight: $sembold;
+        }
+    }
+
+    p {
+        font-size: $font-3;
+        color: $white;
+        font-weight: $reg;
+        max-width: 21.875rem;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 3.5rem;
+
+        @include breakpoint-up(medium) {
+            max-width: 33.875rem;
+            font-size: $font-4;
+        }
+
+        @include breakpoint-up(large) {
+            max-width: 44.75rem;
+            font-size: $font-5;
+            margin-bottom: 5.12rem;
+        }
+    }
+
+    a {
+        color: $black;
+        margin: 0 auto;
+        font-weight: $reg;
+
+        @include breakpoint-up(medium) {
+            font-size: $font-5;
+        }
+    }
+}

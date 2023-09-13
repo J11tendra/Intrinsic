@@ -1,0 +1,109 @@
+.cart__header {
+
+    h1 {
+        font-size: $font-8;
+        font-weight: $med;
+        color: $white;
+        text-align: center;
+        margin-top: 4.625rem;
+
+        @include breakpoint-up(medium) {
+            font-size: $font-10;
+            font-weight: $sembold;
+        }
+    }
+}
+
+.cart {
+
+    @include breakpoint-up(large) {
+        display: grid;
+        grid-template-areas: 
+        "col-1 col-2"
+        "row-1 col-2"
+        ;
+    }
+
+    &__heading {
+        display: flex;
+        flex-direction: row;
+        column-gap: 3rem;
+        align-items: center;
+        font-size: $font-2;
+        font-weight: $med;
+        background-color: $mid-light-gray;
+        max-width: 17rem;
+        width: 100%;
+        height: 3.4375rem;
+        margin: 0 auto;
+
+        @include breakpoint-up(medium) {
+            font-size: 1rem;
+            font-weight: $med;
+        }
+
+        @include breakpoint-up(large) {
+            grid-area: col-1;
+        }
+    }
+
+    &__items {
+        font-size: $font-3;
+        text-align: center;
+        margin-bottom: 8rem;
+
+        @include breakpoint-up(large) {
+            grid-area: row-1;
+        }
+    }
+
+    &__checkout {
+        padding: 1.75rem 2rem;
+        background-color: $mid-light-gray;
+        text-align: center;
+
+        @include breakpoint-up(large) {
+            grid-area: col-2;
+        }
+
+        h3 {
+            font-size: $font-7;
+            font-weight: $med;
+            margin-bottom: 2rem;
+        }
+
+        h5 {
+            display: inline-block;
+            font-size: $font-3;
+            font-weight: $med;
+        }
+
+        a {
+            font-size: $font-3;
+            color: $black;
+            margin: 0 auto;
+        }
+
+        .subtotal {
+            margin-bottom: 1.125rem;
+
+            span {
+                font-size: $font-3;
+                color: $light-gray;
+                font-weight: $light;
+                margin-left: 2rem;
+            }
+        }
+
+        .total {
+            margin-bottom: 2.5rem;
+
+            span {
+                font-size: $font-3;
+                color: $brownish-golden;
+                font-weight: $med;
+                margin-left: 3rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,273 @@
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("/Images/Hero-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 33.625rem;
+    width: 100%;
+
+    &.shop__header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("/Images/pexels-max-rahubovskiy-7018400.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 15.625rem;
+        width: 100%;
+
+        @include breakpoint-up(medium) {
+            height: 28.125rem;
+        }
+    }
+
+    &.about__header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("/Images/oliver-cox-GJDIKOIHi8E-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 15.625rem;
+        width: 100%;
+
+        @include breakpoint-up(medium) {
+            height: 28.125rem;
+        }
+    }
+
+    &.contact__header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("/Images/pexels-curtis-adams-3773572.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 15.625rem;
+        width: 100%;
+
+        @include breakpoint-up(medium) {
+            height: 28.125rem;
+        }
+    }
+
+    &.cart__header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("/Images/pexels-vecislavas-popa-1743227.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 15.625rem;
+        width: 100%;
+
+        @include breakpoint-up(medium) {
+            height: 28.125rem;
+        }
+    }
+
+    @include breakpoint-up(medium) {
+        height: 43.635rem;
+    }
+
+    @include breakpoint-up(large) {
+        height: 53.125rem;
+    }
+}
+ 
+
+.nav_bar {
+    position: relative;
+    padding: 1.3125rem 1.75rem;
+
+    @include breakpoint-up(medium) {
+        padding: 2rem 2.5rem;
+    }
+
+    @include breakpoint-up(large) {
+        padding: 3.125rem 5rem;
+    }
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .hamburger_btn {
+        cursor: pointer;
+        z-index: 10;
+
+        @media (min-width: 1023px) {
+            display: none;            
+        }
+        
+        > span {
+            display: block;
+            height: 0.125rem;
+            width: 1.375rem;
+            background-color: $white;
+            transition: all 200ms ease-in-out;
+            transform-origin: 0.1875rem 0.0625rem;
+
+            &:not(:last-child) {
+                margin-bottom: 0.25rem;
+            }
+        }
+    }
+
+    .hamburger_menu {
+        position: absolute;
+        width: 100%;
+        height: 50rem;
+        top: 0;
+        right: -100%;
+        left: 100%;
+        background-color: $brownish-pink;
+        color: $white;
+        text-align: center;
+        padding: 6rem 0;
+        z-index: 2;
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    .logo {
+        z-index: 10;
+
+
+        img {
+            height: 1.3125rem;
+            width: 6.53125rem;
+
+            @include breakpoint-up(large) {
+                width: 8.5625rem;
+                height: 1.75rem;
+            }
+        }
+    }
+
+    .nav__links {
+        
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+
+            li:not(:last-child) {
+                margin-right: 2.94rem;
+            }
+            
+            a {
+                font-size: $font-5;
+                font-weight: $reg;
+            }
+        }
+    }
+
+    .shopping_cart {
+        z-index: 10;
+
+        
+        img {
+            height: 1.1875rem;
+            width: 1.1875rem;
+
+            @include breakpoint-up(large) {
+                height: 1.5rem;
+                width: 1.5rem;
+            }
+        }
+    }
+
+    .open {
+
+        &__toggle {
+    
+            span:first-child {
+                transform: rotate(45deg);
+            }
+    
+            span:nth-child(2) {
+                opacity: 0;
+            }
+    
+            span:last-child {
+                transform: rotate(-45deg);
+            }
+        }
+    }   
+}
+
+
+// .text {
+//     text-align: center;
+//     padding: 5rem 0;
+
+//     @include breakpoint-up(medium) {
+//         padding: 7rem 0;
+//     }
+
+//     @include breakpoint-up(large) {
+//         padding: 3.875rem 0;
+//     }
+
+
+//     h1 {
+//         color: $white;
+//         max-width: 22.5rem;
+//         width: 100%;
+//         margin: 0 auto;
+//         margin-bottom: 3.2rem;
+
+//         span {
+//             color: $brownish-pink;
+//         }
+
+//         @include breakpoint-up(medium) {
+//             max-width: 30.5rem;
+//             margin-bottom: 3.5rem;
+//         }
+
+//         @include breakpoint-up(large) {
+//             max-width: 57.25rem;
+//             font-size: $font-10;
+//             font-weight: $sembold;
+//         }
+//     }
+
+//     p {
+//         font-size: $font-3;
+//         color: $white;
+//         font-weight: $reg;
+//         max-width: 21.875rem;
+//         width: 100%;
+//         margin: 0 auto;
+//         margin-bottom: 3.5rem;
+
+//         @include breakpoint-up(medium) {
+//             max-width: 33.875rem;
+//             font-size: $font-4;
+//         }
+
+//         @include breakpoint-up(large) {
+//             max-width: 44.75rem;
+//             font-size: $font-5;
+//             margin-bottom: 5.12rem;
+//         }
+//     }
+
+//     a {
+//         color: $black;
+//         margin: 0 auto;
+//         font-weight: $reg;
+
+//         @include breakpoint-up(medium) {
+//             font-size: $font-5;
+//         }
+//     }
+// }
+
+
