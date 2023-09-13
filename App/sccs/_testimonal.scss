@@ -1,0 +1,122 @@
+.testimonal {
+    padding: 3.75rem;
+
+    @include breakpoint-up(large) {
+        padding: 5.625rem 8.725rem;
+    }
+
+    h2 {
+        max-width: 15.75rem;
+        width: 100%;
+        margin: 0 auto;
+        font-size: $font-6;
+        font-weight: $med;
+        text-align: center;
+        margin-bottom: 3.75rem;
+
+        @include breakpoint-up(medium) {
+            max-width: 26.3125rem;
+            font-size: $font-8;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+
+        @include breakpoint-up(medium) {
+            flex-direction: row;
+            gap: 0.5rem;
+        }
+
+        @include breakpoint-up(large) {
+            justify-content: space-around;
+        }
+    }
+
+    &__card {
+        height: 17rem;
+        max-width: 19.375rem;
+        width: 100%;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: $mid-light-gray;
+        overflow: hidden;
+
+        @include breakpoint-up(large) {
+            height: 21.75rem;
+        }
+
+        .flex-heading {
+            display: flex;
+            gap: 2.38rem;
+            align-items: center;
+
+            @include breakpoint-up(medium) {
+                gap: 1rem;
+            }
+
+            @include breakpoint-up(large) {
+                gap: 1.38rem;
+            }
+
+
+            img {
+
+                @include breakpoint-up(large) {
+                    height: 5rem;
+                    width: 5rem;
+                }
+            }
+            .name {
+
+                h4 {
+                    font-size: $font-5;
+
+                    @include breakpoint-up(medium) {
+                        font-size: $font-4;
+                    }
+
+                    @include breakpoint-up(large) {
+                        font-size: $font-5;
+                    }
+                }
+
+                h6 {
+                    font-size: $font-2;
+                    color: $light-gray;
+                    font-weight: $reg;
+                    margin: 0;
+
+                    @include breakpoint-up(medium) {
+                        font-size: $font-1;
+                    }
+
+                    @include breakpoint-up(large) {
+                        font-size: $font-2;
+                    }
+                }
+            }
+        }
+
+        p {
+            max-width: 15.6875rem;
+            width: 100%;
+            margin: 0 auto;
+            font-size: $font-3;
+            line-height: 1.625rem;
+            margin-top: 1.5rem;
+
+            @include breakpoint-up(medium) {
+                font-size: $font-2;
+                line-height: 1.265rem;
+            }
+
+            @include breakpoint-up(large) {
+                font-size: $font-3;
+                line-height: 1.625rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,134 @@
+.about__header {
+
+    h1 {
+        font-size: $font-8;
+        font-weight: $med;
+        color: $white;
+        text-align: center;
+        margin-top: 4.625rem;
+
+        @include breakpoint-up(medium) {
+            font-size: $font-10;
+            font-weight: $sembold;
+        }
+    }
+}
+
+
+
+.team {
+    padding: 3.75rem;
+    text-align: center;
+    background-color: $mid-light-gray;
+
+    @include breakpoint-up(large) {
+        padding: 6rem 7rem;
+    }
+
+    @include breakpoint-up(x-large) {
+        padding: 6.3125rem 12rem;
+    }
+
+    h2 {
+        font-size: $font-6;
+        font-weight: $med;
+        margin-bottom: 2.45rem;
+
+        @include breakpoint-up(medium) {
+            font-size: $font-8;
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        @include breakpoint-up(medium) {
+            flex-direction: row;
+        }
+    }
+
+    &__img {
+        border-radius: 0.375rem;
+        background-color: $black;
+        height: 18.75rem;
+        max-width: 19.375rem;
+        width: 100%;
+        margin: 0 auto;
+
+        @include breakpoint-up(medium) {
+            height: 14rem;
+        }
+
+        @include breakpoint-up(large) {
+            height: 21.5625rem;
+            max-width: 16.375rem;
+        }
+
+        @include breakpoint-up(x-large) {
+            max-width: 20rem;
+        }
+
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 0.375rem;
+            object-fit: cover;
+            object-position: top;
+            opacity: 0.9;
+        }
+    }
+}
+
+
+.contact.cnct-pg {
+
+    .contact__img {
+        height: 29rem;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("/Images/sidekix-media-Qt4r-70J9N0-unsplash.jpg");
+        padding: 4rem;
+
+        @include breakpoint-up(x-large) {
+            height: 37rem;
+        }
+
+        p {
+            max-width: 17.0625rem;
+            width: 100%;
+            font-size: $font-3;
+            color: $white;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 2rem;
+
+            @include breakpoint-up(medium) {
+                max-width: 20rem;
+                font-size: $font-4;
+                margin-bottom: 3rem;
+            }
+
+            @include breakpoint-up(large) {
+                max-width: 35rem;
+                margin-bottom: 5rem;
+            }
+
+            @include breakpoint-up(x-large) {
+                max-width: 42.625rem;
+            }
+        }
+    }
+}
+
+p.abt-pg {
+    max-width: 21.875rem;
+
+    @include breakpoint-up(medium) {
+        max-width: 31.25rem;
+    }
+}
+
+.rw-flex {
+    flex-direction: row;
+}

@@ -1,0 +1,171 @@
+.shop {
+    padding: 1.88rem;
+
+    @include breakpoint-up(medium) {
+        padding: 1.88rem 5rem;
+    }
+
+    @include breakpoint-up(large) {
+        padding: 2rem 6rem;
+    }
+
+    &__heading {
+        margin-bottom: 1.88rem;
+
+        @include breakpoint-up(medium) {
+            margin-top: 2.38rem;
+        }
+
+        h2 {
+            font-size: $font-6;
+            font-weight: $med;
+
+            @include breakpoint-up(medium) {
+                font-size: $font-8;
+            }
+        }
+    }
+
+    &__container {
+        margin: 0 auto;
+        max-width: 25rem;
+        width: 100%;
+
+        @include breakpoint-up(medium) {
+            max-width: 48rem;
+        }
+
+        @include breakpoint-up(large) {
+            max-width: 80rem;
+        }
+
+        @include breakpoint-up(x-large) {
+            max-width: 110rem;
+        }
+
+        .card-items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-column-gap: 0.75rem;
+            grid-row-gap: 1.25rem;
+
+            @include breakpoint-up(medium) {
+                grid-column-gap: 1.94rem;
+                grid-row-gap: 1.88rem;
+                justify-content: center;
+            }
+
+            @include breakpoint-up(large) {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                grid-column-gap: 0.75rem;
+            }
+
+
+            &__01 {
+                height: 15rem;
+                max-width: 11.5625rem;
+                width: 100%;
+                border-radius: 0.25rem;
+                background-color: $very-light-gray;
+                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+
+                @include breakpoint-up(medium) {
+                    height: 26.5rem;
+                    max-width: 22.8125rem;
+                }
+
+                @include breakpoint-up(large) {
+                    height: 26.5rem;
+                    max-width: 29rem;
+                }
+
+                @include breakpoint-up(x-large) {
+                    height: 28.5rem;
+                    max-width: 30rem;
+                }
+
+                &__img {
+                    img {
+                        height: 9.375rem;
+                        max-width: 11.5625rem;
+                        width: 100%;
+                        border-radius: 0.25rem;
+                        object-fit: cover;
+
+                        @include breakpoint-up(medium) {
+                            height: 18.75rem;
+                            max-width: 22.8125rem;
+                        }
+
+                        @include breakpoint-up(x-large) {
+                            height: 20rem;
+                            max-width: 30rem;
+                        }
+                    }
+                }
+
+                &__description {
+                    padding-left: 0.94rem;
+
+                    h4 {
+                        font-size: $font-4;
+                        margin-top: 0.38rem;
+                        color: $black;
+
+                        @include breakpoint-up(medium) {
+                            font-size: $font-6;
+                            margin-top: 0.75rem;
+                            font-weight: $med;
+                        }
+                    }
+
+                    p {
+                        font-size: $font-2;
+                        color: $light-gray;
+                        margin: 0.34rem 0;
+
+                        @include breakpoint-up(medium) {
+                            font-size: $font-3;
+                            margin: 0.75rem 0;
+                        }
+                    }
+                    
+                    span {
+                        font-size: $font-2;
+                        font-weight: $reg;
+                        margin-top: 0.34rem;
+                        color: $black;
+
+                        @include breakpoint-up(medium) {
+                            font-size: $font-4;
+                            font-weight: $med;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__button {
+        margin: 2.38rem 0 1.94rem 0;
+
+        @include breakpoint-up(medium) {
+            margin: 3.13rem 0;
+        }
+
+        a {
+            display: block;
+            margin: 0 auto;
+            font-size: $font-3;
+            font-weight: $reg;
+            color: $black;
+            text-align: center;
+
+            @include breakpoint-up(large) {
+                font-size: $font-5;
+            }
+        }
+    }
+}

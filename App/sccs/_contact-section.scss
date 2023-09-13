@@ -1,0 +1,74 @@
+.contact {
+    padding: 3.5rem 1.5rem;
+
+    @include breakpoint-up(medium) {
+        padding: 3.75rem;
+    }
+
+    @include breakpoint-up(large) {
+        padding: 4.5rem 6rem;
+    }
+
+    &__img {
+        height: 25rem;
+        max-width: 23.75rem;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 0.625rem;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("/Images/zac-gudakov-mw_mj-noYHM-unsplash.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 4.3125rem 4.94rem;
+        overflow: hidden;
+
+        @include breakpoint-up(medium) {
+            max-width: 52rem;
+            padding: 5.5rem;
+        }
+
+        @include breakpoint-up(large) {
+            height: 31.25rem;
+            max-width: 78rem;
+            padding: 9.1375rem;
+        }
+
+        @include breakpoint-up(x-large) {
+            height: 37rem;
+            max-width: 100rem;
+        }
+        
+        h2 {
+            max-width: 13.9375rem;
+            width: 100%;
+            margin: 0 auto;
+            font-size: 1.75rem;
+            text-align: center;
+            font-weight: $sembold;
+            color: $white;
+            margin-bottom: 2.94rem;
+
+            @include breakpoint-up(medium) {
+                font-size: $font-8;
+                max-width: 38.5rem;
+            }
+
+            @include breakpoint-up(x-large) {
+                font-size: $font-9;
+            }
+        }
+
+        a {
+            font-size: $font-3;
+            color: $black;
+            font-weight: $reg;
+            text-align: center;
+            margin: 0 auto;
+
+            @include breakpoint-up(large) {
+                font-size: $font-5;
+                font-weight: $med
+            }
+        }
+    }
+}

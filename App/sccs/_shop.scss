@@ -1,0 +1,71 @@
+.shop__header {
+
+    h1 {
+        font-size: $font-8;
+        font-weight: $med;
+        color: $white;
+        text-align: center;
+        margin-top: 4.625rem;
+
+        @include breakpoint-up(medium) {
+            font-size: $font-10;
+            font-weight: $sembold;
+        }
+    }
+}
+
+.shop-items {
+    padding: 1.25rem 1.5rem 3.75rem 1.5rem;
+
+    @include breakpoint-up(medium) {
+        padding: 2.5rem 4rem 5.3125rem 4rem;
+    }
+
+    h6 {
+        font-size: $font-2;
+        text-align: right;
+        font-weight: $reg;
+        max-width: 24rem;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 2.5rem;
+
+        @include breakpoint-up(medium) {
+            max-width: 48rem;
+            font-size: $font-4;
+            margin-bottom: 5.625rem;
+        }
+        
+        @include breakpoint-up(large) {
+            max-width: 80rem;
+        }
+        
+        @include breakpoint-up(x-large) {
+            max-width: 110rem;
+        }
+    }
+
+    .shop-indicator {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        margin-top: 2.5rem;
+
+        @include breakpoint-up(medium) {
+            margin-top: 4rem;
+            gap: 0.725rem;
+        }
+
+        a {
+            font-size: $font-2;
+            font-weight: $reg;
+            color: $black;
+
+            @include breakpoint-up(medium) {
+                font-size: $font-4;
+            }
+        }
+    }
+}

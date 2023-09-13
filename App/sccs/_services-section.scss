@@ -1,0 +1,76 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3.12rem;
+    padding: 3.75rem 2.25rem;
+    background-color: $mid-light-gray;
+
+    @include breakpoint-up(medium) {
+        flex-direction: row;
+        gap: 3.5rem;
+        padding: 4.5rem 5rem;
+    }
+
+    @include breakpoint-up(large) {
+        padding: 4.62rem 8.725rem;
+        gap: 4.5rem;
+    }
+
+    &__item {
+        text-align: center;
+        
+        h4 {
+            font-size: $font-5;
+            font-weight: $med;
+            margin-bottom: 1.44rem;
+
+            @include breakpoint-up(large) {
+                font-size: $font-7;
+                font-weight: $med;
+                margin-bottom: 1.87rem;
+            }
+        }
+
+        p {
+            max-width: 18.125rem;
+            width: 100%;
+            font-size: $font-3;
+            color: $light-gray;
+            line-height: 1.3125rem;
+            margin: 0 auto;
+            margin-bottom: 1.12rem;
+            
+            @include breakpoint-up(large) {
+                max-width: 22.375rem;
+                font-size: $font-5;
+                line-height: 1.6875rem;
+                margin-bottom: 1.81rem;
+            }
+        }
+
+        a {
+            font-size: $font-4;
+            color: $black;
+            font-weight: $reg;
+            
+            @include breakpoint-up(large) {
+                line-height: 1.40625rem;
+                font-size: $font-5;
+                font-weight: $med;
+            }
+
+            img {
+                height: 0.66188rem;
+                width: 0.75875rem;
+                margin-left: 0.81rem;
+
+                @include breakpoint-up(large) {
+                    height: 0.82356rem;
+                    width: 0.94631rem;
+                }
+            }
+        }
+    }
+}

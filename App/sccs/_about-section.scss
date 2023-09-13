@@ -1,0 +1,132 @@
+.about {
+    padding: 3.75rem 1.875rem;
+
+    @include breakpoint-up(large) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8rem;
+        padding: 5.62rem 6rem;
+    }
+
+    @include breakpoint-up(x-large) {
+        gap: 10rem;
+
+        &.second {
+            padding: 5.62rem 6rem 5.62rem 9rem;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        margin-bottom: 3.81rem;
+
+        &.second {
+            margin: 3.81rem 0 0 0;
+        }
+
+        @include breakpoint-up(large) {
+            flex: 1;
+            margin: 0;
+
+            &.second {
+                margin: 0;
+            }
+        }
+
+        h2 {
+            font-size: $font-6;
+            font-weight: $med;
+            max-width: 15.75rem;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 2.675rem;
+
+            @include breakpoint-up(medium) {
+                max-width: 23.75rem;
+                font-size: $font-8;
+                font-weight: $med;
+                line-height: normal;
+            }
+
+            @include breakpoint-up(large) {
+                margin: 0 0 2.675rem 0;
+                text-align: left;
+                margin-bottom: 4.31rem;
+            }
+        }
+
+        p {
+            max-width: 18.75rem;
+            width: 100%;
+            margin: 0 auto;
+            font-size: $font-3;
+            font-weight: $reg;
+            color: $light-gray;
+            line-height: normal;
+            margin-bottom: 2.45rem;
+
+            @include breakpoint-up(medium) {
+                font-size: $font-4;
+                max-width: 32rem;
+                margin-bottom: 2.875rem;
+            }
+
+            @include breakpoint-up(large) {
+                max-width: 32.5625rem;
+                margin: 0 0 2.875rem 0;
+                text-align: left;
+                font-size: $font-5;
+                margin-bottom: 4.31rem;
+            }
+        }
+
+        a {
+            font-size: $font-3;
+            font-weight: $reg;
+            color: $black;
+            margin: 0 auto;
+
+            @include breakpoint-up(large) {
+                margin: 0;
+                font-size: $font-5;
+            }
+        }
+    }
+
+    &__img {
+        text-align: center;
+
+        @include breakpoint-up(large) {
+            flex: 1.5;
+            text-align: right;
+
+            &.second {
+                text-align: left;
+            }
+        }
+
+        img {
+            height: 18.75rem;
+            max-width: 23.125rem;
+            width: 100%;
+            border-radius: 0.25rem;
+
+            @include breakpoint-up(medium) {
+                height: 22rem;
+                max-width: 30rem;
+            }
+
+            @include breakpoint-up(large) {
+                height: 31.25rem;
+                max-width: 37.5rem;
+            }
+
+            @include breakpoint-up(x-large) {
+                max-width: 55rem;
+                height: 34rem;
+            }
+        }
+    }
+}
