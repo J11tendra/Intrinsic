@@ -4,6 +4,7 @@ Interior design is the art and science of enhancing the interior of a building t
 
 
 ## Table of Content
+
 * [Overview](#overview)
   *  [The Challenge](#challenge)
   *  [Screenshots](#screenshots)
@@ -29,8 +30,8 @@ The Tablet "Footer" was challenging for me to code. Despite the last flex being 
 
 **Screenshots**
 
-![Homepage Desktop Intrinsic](Images/home1.png)
-![Shoppage Desktop Intrinsic](Images/about2.png)
+![Homepage Desktop](https://github.com/J11tendra/Intrinsic/assets/108735984/339012db-26d4-4eee-b6dc-dfc5d9743344)
+![A](https://github.com/J11tendra/Intrinsic/assets/108735984/af221194-be42-4f79-b758-cc7da668a217)
 
 **Website Preview Link**
 
@@ -61,8 +62,9 @@ The rest all development was combination of flex, grid and long hours of debuggi
 
 **Built with**
 
-![SCSS](/Images/scss3.png)
-![Js](/Images/javascript4.png)
+![javascript4](https://github.com/J11tendra/Intrinsic/assets/108735984/4437a469-39cc-4707-a183-d10e08767a7a)
+![scss3](https://github.com/J11tendra/Intrinsic/assets/108735984/a9245cf8-a5e6-48a1-ac37-2598486cd68b)
+
 
 
 **My learnings**
