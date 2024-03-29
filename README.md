@@ -33,9 +33,6 @@ The Tablet "Footer" was challenging for me to code. Despite the last flex being 
 ![Homepage Desktop](https://github.com/J11tendra/Intrinsic/assets/108735984/339012db-26d4-4eee-b6dc-dfc5d9743344)
 ![A](https://github.com/J11tendra/Intrinsic/assets/108735984/af221194-be42-4f79-b758-cc7da668a217)
 
-**Website Preview Link**
-
-#### Url: [Visit Website](www.jitendra.com)
 
 **Features**
 
